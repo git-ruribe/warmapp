@@ -618,7 +618,7 @@ const UI = {
         this.nextExercise();        
       }
     }, exercise.exerciseTypes.countType.value === 'seconds' ? 1000 :
-    (AppState.getExpectedTime(exercise.id) / (exercise.exerciseTypes.countType.count * (steps.length || 1))));
+    (AppState.getExpectedTime(exercise.id) / (exercise.exerciseTypes.countType.count )));
 
     // Iniciar cronómetro
     this.startExerciseTimer();
