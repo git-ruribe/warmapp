@@ -615,11 +615,10 @@ const UI = {
       if (this.state.exerciseCountdown <= 0) {
         clearInterval(this.state.counterInterval);
         this.state.counterInterval = null;
-        // Avanzar al siguiente paso o ejercicio
-        this.nextExercise();
+        this.nextExercise();        
       }
     }, exercise.exerciseTypes.countType.value === 'seconds' ? 1000 :
-    (AppState.getExpectedTime(exercise.id) / (exercise.exerciseTypes.countType.count / (steps.length || 1))));
+    (AppState.getExpectedTime(exercise.id) / (exercise.exerciseTypes.countType.count * (steps.length || 1))));
 
     // Iniciar cronómetro
     this.startExerciseTimer();
