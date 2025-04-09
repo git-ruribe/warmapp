@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FF5722">
+    <title>Calientapp - Tu entrenador de calentamiento</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+    <style>
+        :root {
+            --primary: #FF5722;
+            --primary-dark: #E64A19;
+            --primary-light: #FFCCBC;
+            --secondary: #2196F3;
+            --text: #212121;
+            --text-light: #757575;
+            --background: #FAFAFA;
+            --white: #FFFFFF;
+            --success: #4CAF50;
+            --warning: #FFC107;
+            --error: #F44336;
+            --gray-light: #EEEEEE;
+            --gray: #9E9E9E;
+            --border-radius: 8px;
+            --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            --anim-duration: 0.3s;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background: none;
+            font-family: inherit;
+            font-size: inherit;
+            color: inherit;
+            transition: all var(--anim-duration) ease;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary);
+            color: var(--white);
+        }
+
+        .btn-secondary:hover {
+            filter: brightness(90%);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            background-color: transparent;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-light);
+        }
+
+        .btn-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            padding: 0;
+        }
+
+        .btn-large {
+            font-size: 1.2rem;
+            padding: 16px 32px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .screen {
+            display: none;
+            min-height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .screen.active {
+            display: flex;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Header */
+        .app-header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            z-index: 100;
+            padding: 16px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .logo-icon {
+            font-size: 1.8rem;
+            margin-right: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .nav-link {
+            color: var(--text);
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: var(--border-radius);
+        }
+
+        .nav-link:hover {
+            background-color: var(--gray-light);
+        }
+
+        .nav-link.active {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Home Screen */
+        .home-screen {
+            text-align: center;
+            gap: 32px;
+        }
+
+        .welcome-section {
+            margin-bottom: 32px;
+        }
+
+        .welcome-title {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+
+        .welcome-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .start-button {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Exercise Screen */
+        .exercise-screen {
+            gap: 24px;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            max-width: 800px;
+            height: 8px;
+            background-color: var(--gray-light);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 16px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: var(--primary);
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        .exercise-header {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .exercise-position {
+            font-size: 1rem;
+            color: var(--text-light);
+        }
+
+        .exercise-timer {
+            font-size: 1rem;
+            color: var(--text-light);
+        }
+
+        .exercise-card {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .exercise-title {
+            font-size: 1.8rem;
+            text-align: center;
+            color: var(--primary);
+        }
+
+        .exercise-subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            color: var(--text-light);
+            margin-top: -16px;
+        }
+
+        .exercise-image {
+            width: 0px;
+            max-width: 300px;
+            height: 0px;
+            background-color: var(--gray-light);
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .exercise-image img, .exercise-image svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .counter-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .counter-label {
+            font-size: 1rem;
+            color: var(--text-light);
+        }
+
+        .counter-value {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .exercise-description {
+            font-size: 1.5rem;
+            text-align: center;
+            color: var(--text);
+            margin-bottom: 12px;
+        }
+
+        .exercise-controls {
+            display: flex;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        /* History Screen */
+        .history-screen {
+            gap: 24px;
+        }
+
+        .history-title {
+            font-size: 2rem;
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+
+        .calendar-container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .calendar-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 8px;
+        }
+
+        .calendar-day-header {
+            text-align: center;
+            font-weight: 600;
+            color: var(--text-light);
+            padding: 8px 0;
+        }
+
+        .calendar-day {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--border-radius);
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .calendar-day:hover {
+            background-color: var(--gray-light);
+        }
+
+        .calendar-day.active {
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+            font-weight: 600;
+        }
+
+        .calendar-day.today {
+            border: 2px solid var(--primary);
+        }
+
+        .history-list {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .history-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .history-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .history-date {
+            font-weight: 600;
+        }
+
+        .history-time {
+            color: var(--text-light);
+        }
+
+        .history-details {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .history-stats {
+            display: flex;
+            gap: 16px;
+        }
+
+        .history-stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .history-stat-value {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .history-stat-label {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        /* Summary Screen */
+        .summary-screen {
+            gap: 24px;
+            text-align: center;
+        }
+
+        .summary-title {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .summary-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 32px;
+        }
+
+        .summary-card {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .summary-stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .summary-stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 100px;
+        }
+
+        .summary-stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .summary-stat-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .summary-message {
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            color: var(--success);
+        }
+
+        .summary-controls {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+        }
+
+        /* Animations */
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .slide-up {
+            animation: slideUp 0.5s ease forwards;
+        }
+
+        .slide-down {
+            animation: slideDown 0.5s ease forwards;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .welcome-title {
+                font-size: 2rem;
+            }
+            
+            .exercise-card {
+                padding: 20px;
+            }
+            
+            .counter-value {
+                font-size: 3.5rem;
+            }
+            
+            .exercise-controls {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .exercise-controls button {
+                width: 100%;
+            }
+            
+            .summary-stats {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Utilities */
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-1 {
+            margin-bottom: 8px;
+        }
+
+        .mb-2 {
+            margin-bottom: 16px;
+        }
+
+        .mb-3 {
+            margin-bottom: 24px;
+        }
+
+        .mb-4 {
+            margin-bottom: 32px;
+        }
+
+        .mt-1 {
+            margin-top: 8px;
+        }
+
+        .mt-2 {
+            margin-top: 16px;
+        }
+
+        .mt-3 {
+            margin-top: 24px;
+        }
+
+        .mt-4 {
+            margin-top: 32px;
+        }
+
+        /* Toast Messages */
+        .toast-container {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            width: calc(100% - 48px);
+            max-width: 400px;
+        }
+
+        .toast {
+            background-color: var(--white);
+            color: var(--text);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            padding: 16px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            animation: slideUp 0.3s ease-out;
+        }
+
+        .toast-success {
+            border-left: 4px solid var(--success);
+        }
+
+        .toast-error {
+            border-left: 4px solid var(--error);
+        }
+
+        .toast-warning {
+            border-left: 4px solid var(--warning);
+        }
+
+        .toast-content {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .toast-icon {
+            font-size: 1.5rem;
+        }
+
+        .toast-message {
+            font-size: 0.9rem;
+        }
+
+        .toast-close {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: var(--text-light);
+        }
+
+        .toast-close:hover {
+            color: var(--text);
+        }
+
+        /* Spinner */
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(255, 87, 34, 0.3);
+            border-radius: 50%;
+            border-top-color: var(--primary);
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Service Worker notification */
+        .sw-notification {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--white);
+            padding: 16px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .sw-notification.active {
+            transform: translateY(0);
+        }
+
+        .sw-message {
+            flex: 1;
+        }
+
+        .sw-actions {
+            display: flex;
+            gap: 8px;
+        }
+        .exercise-details-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .exercise-details-content {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            padding: 24px;
+            box-shadow: var(--shadow);
+        }
+
+        .exercise-details-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .exercise-details-title {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .exercise-details-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-light);
+        }
+
+        .exercise-details-section {
+            margin-bottom: 16px;
+        }
+
+        .exercise-details-section-title {
+            font-weight: 600;
+            color: var(--primary-dark);
+            margin-bottom: 8px;
+        }
+
+        .exercise-details-section-content {
+            color: var(--text);
+        }
+
+        .exercise-details-list {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="app-header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon">🔥</span>
+                <span>Calientapp</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#" class="nav-link active" id="home-nav">Inicio</a>
+                <a href="#" class="nav-link" id="history-nav">Historial</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Screen -->
+    <section class="screen active" id="home-screen">
+        <div class="container home-screen">
+            <div class="welcome-section">
+                <h1 class="welcome-title">¡Bienvenido a Calientapp!</h1>
+                <p class="welcome-subtitle">Tu entrenador personal para rutinas de calentamiento efectivas. Prepara tu cuerpo para el ejercicio con la secuencia perfecta de movimientos.</p>
+            </div>
+            <button id="start-workout-btn" class="btn btn-primary btn-large start-button">
+                Iniciar calentamiento
+            </button>
+        </div>
+    </section>
+
+    <!-- Exercise Screen -->
+    <section class="screen" id="exercise-screen">
+        <div class="container exercise-screen">
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="exercise-progress-bar"></div>
+            </div>
+            <div class="exercise-header">
+                <div class="exercise-position" id="exercise-position">Ejercicio 1 de 10</div>
+                <div class="exercise-timer" id="exercise-timer">00:00</div>
+            </div>
+            <div class="exercise-card">
+                <h2 class="exercise-title" id="exercise-title">Movilidad de Tobillos</h2>
+                <p class="exercise-subtitle" id="exercise-subtitle">Círculos con cada tobillo</p>
+                <p class="exercise-description" id="exercise-description">
+                    Realiza círculos suaves con cada tobillo, 10 en cada dirección.
+                </p>
+                <div class="exercise-image" id="exercise-image">
+                    <!-- SVG or image will be inserted here -->
+                </div>
+                <div class="counter-container">
+                    <div class="counter-label" id="counter-label">Repeticiones restantes</div>
+                    <div class="counter-value" id="counter-value">10</div>
+                </div>
+                <div class="exercise-controls">
+                    <button id="pause-btn" class="btn btn-outline">Pausar</button>
+                    <button id="next-btn" class="btn btn-primary">Siguiente</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Screen -->
+    <section class="screen" id="history-screen">
+        <div class="container history-screen">
+            <h1 class="history-title">Tu historial de actividad</h1>
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <div class="calendar-title" id="calendar-month">Abril 2025</div>
+                    <div class="calendar-controls">
+                        <button id="prev-month-btn" class="btn btn-icon">
+                            ⬅️
+                        </button>
+                        <button id="next-month-btn" class="btn btn-icon">
+                            ➡️
+                        </button>
+                    </div>
+                </div>
+                <div class="calendar-grid" id="calendar-grid">
+                    <!-- Calendar days will be generated here -->
+                    <div class="calendar-day-header">Dom</div>
+                    <div class="calendar-day-header">Lun</div>
+                    <div class="calendar-day-header">Mar</div>
+                    <div class="calendar-day-header">Mié</div>
+                    <div class="calendar-day-header">Jue</div>
+                    <div class="calendar-day-header">Vie</div>
+                    <div class="calendar-day-header">Sáb</div>
+                    <!-- Calendar days will be inserted here by JS -->
+                </div>
+            </div>
+            <div class="history-list" id="history-list">
+                <!-- History items will be generated here -->
+                <div class="history-empty text-center" id="history-empty">
+                    <p>No tienes sesiones registradas aún. ¡Completa tu primer calentamiento!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary Screen -->
+    <section class="screen" id="summary-screen">
+        <div class="container summary-screen">
+            <h1 class="summary-title">¡Calentamiento completado!</h1>
+            <p class="summary-subtitle">Excelente trabajo. Tu cuerpo ahora está listo para la actividad física.</p>
+            <div class="summary-card">
+                <div class="summary-stats">
+                    <div class="summary-stat">
+                        <div class="summary-stat-value" id="summary-time">10:30</div>
+                        <div class="summary-stat-label">Tiempo total</div>
+                    </div>
+                    <div class="summary-stat">
+                        <div class="summary-stat-value" id="summary-exercises">10</div>
+                        <div class="summary-stat-label">Ejercicios</div>
+                    </div>
+                    <div class="summary-stat">
+                        <div class="summary-stat-value" id="summary-streak">3</div>
+                        <div class="summary-stat-label">Días seguidos</div>
+                    </div>
+                </div>
+                <p class="summary-message" id="summary-message">Has mejorado tu tiempo en un 5% comparado con tu última sesión.</p>
+            </div>
+            <div class="summary-controls">
+                <button id="home-btn" class="btn btn-outline">Volver al inicio</button>
+                <button id="restart-btn" class="btn btn-primary">Nueva sesión</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container">
+        <!-- Toast notifications will be generated here -->
+    </div>
+
+    <!-- Service Worker Notification -->
+    <div class="sw-notification" id="sw-notification">
+        <div class="sw-message">¡Nueva versión disponible!</div>
+        <div class="sw-actions">
+            <button id="sw-dismiss" class="btn btn-outline">Después</button>
+            <button id="sw-update" class="btn btn-primary">Actualizar</button>
+        </div>
+    </div>
+
+    <div id="exercise-details-modal" class="exercise-details-modal">
+        <div class="exercise-details-content">
+            <div class="exercise-details-header">
+                <h2 id="exercise-details-title" class="exercise-details-title">Detalles del Ejercicio</h2>
+                <button id="exercise-details-close" class="exercise-details-close">×</button>
+            </div>
+            <div id="exercise-details-purpose" class="exercise-details-section">
+                <h3 class="exercise-details-section-title">Propósito</h3>
+                <p class="exercise-details-section-content"></p>
+            </div>
+            <div id="exercise-details-technique" class="exercise-details-section">
+                <h3 class="exercise-details-section-title">Técnica</h3>
+                <ul class="exercise-details-list exercise-details-section-content"></ul>
+            </div>
+            <div id="exercise-details-benefits" class="exercise-details-section">
+                <h3 class="exercise-details-section-title">Beneficios</h3>
+                <ul class="exercise-details-list exercise-details-section-content"></ul>
+            </div>
+            <div id="exercise-details-common-mistakes" class="exercise-details-section">
+                <h3 class="exercise-details-section-title">Errores Comunes</h3>
+                <ul class="exercise-details-list exercise-details-section-content"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registered: ', registration);
+                        
+                        // Check for updates
+                        registration.addEventListener('updatefound', () => {
+                            const newWorker = registration.installing;
+                            
+                            newWorker.addEventListener('statechange', () => {
+                                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                    // Show update notification
+                                    document.getElementById('sw-notification').classList.add('active');
+                                }
+                            });
+                        });
+                    })
+                    .catch(error => {
+                        console.log('ServiceWorker registration failed: ', error);
+                    });
+                
+                // Handle update button
+                document.getElementById('sw-update').addEventListener('click', () => {
+                    navigator.serviceWorker.getRegistration().then(reg => {
+                        if (reg) {
+                            reg.update().then(() => {
+                                window.location.reload();
+                            });
+                        }
+                    });
+                });
+                
+                // Handle dismiss button
+                document.getElementById('sw-dismiss').addEventListener('click', () => {
+                    document.getElementById('sw-notification').classList.remove('active');
+                });
+            });
+        }
+
+        // Exercise Details Modal Functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('exercise-details-modal');
+            const closeBtn = document.getElementById('exercise-details-close');
+            const titleEl = document.getElementById('exercise-details-title');
+            const purposeEl = document.getElementById('exercise-details-purpose').querySelector('.exercise-details-section-content');
+            const techniqueEl = document.getElementById('exercise-details-technique').querySelector('.exercise-details-list');
+            const benefitsEl = document.getElementById('exercise-details-benefits').querySelector('.exercise-details-list');
+            const mistakesEl = document.getElementById('exercise-details-common-mistakes').querySelector('.exercise-details-list');
+
+            // Function to show exercise details
+            function showExerciseDetails(exercise) {
+                // Set title
+                titleEl.textContent = exercise.title;
+
+                // Set purpose
+                purposeEl.textContent = exercise.detailedInstructions.purpose;
+
+                // Populate technique tips
+                techniqueEl.innerHTML = exercise.detailedInstructions.technique
+                    .map(tip => `<li>${tip}</li>`).join('');
+
+                // Populate benefits
+                benefitsEl.innerHTML = exercise.detailedInstructions.benefits
+                    .map(benefit => `<li>${benefit}</li>`).join('');
+
+                // Populate common mistakes
+                mistakesEl.innerHTML = exercise.detailedInstructions.commonMistakes
+                    .map(mistake => `<li>${mistake}</li>`).join('');
+
+                // Show modal
+                modal.style.display = 'flex';
+            }
+
+            // Close modal when close button is clicked
+            closeBtn.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+
+            // Close modal when clicking outside of content
+            modal.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+
+            // Add details button to exercise card
+            function addExerciseDetailsButton() {
+                const exerciseCard = document.querySelector('.exercise-card');
+                
+                // Remove any existing details button first
+                const existingButton = exerciseCard.querySelector('.exercise-details-btn');
+                if (existingButton) {
+                    existingButton.remove();
+                }
+
+                // Create new details button
+                const detailsButton = document.createElement('button');
+                detailsButton.textContent = 'Ver Detalles';
+                detailsButton.classList.add('btn', 'btn-outline', 'mt-2', 'exercise-details-btn');
+                
+                detailsButton.addEventListener('click', () => {
+                    const currentExercise = AppState.getCurrentExercise();
+                    if (currentExercise) {
+                        showExerciseDetails(currentExercise);
+                    }
+                });
+
+                exerciseCard.appendChild(detailsButton);
+            }
+
+            // Expose functions to global scope
+            window.showExerciseDetails = showExerciseDetails;
+            window.addExerciseDetailsButton = addExerciseDetailsButton;
+
+            // Modify UI initialization to add details button
+            const originalUIInit = UI.init;
+            UI.init = function() {
+                const result = originalUIInit.apply(this);
+                
+                // Add hook to add details button when exercise is set
+                const originalSetExercise = UI.setExercise;
+                UI.setExercise = function(exercise) {
+                    const result = originalSetExercise.apply(this, arguments);
+                    
+                    // Add details button after setting exercise
+                    if (exercise) {
+                        addExerciseDetailsButton();
+                    }
+                    
+                    return result;
+                };
+                
+                return result;
+            };
+        });
+    </script>
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
