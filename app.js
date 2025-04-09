@@ -614,8 +614,8 @@ const UI = {
       // Si llegamos a 0 en este paso
       if (this.state.exerciseCountdown <= 0) {
         clearInterval(this.state.counterInterval);
-        this.state.counterInterval = null;
-        this.nextExercise();        
+        //this.state.counterInterval = null;
+        //this.nextExercise();        
       }
     }, exercise.exerciseTypes.countType.value === 'seconds' ? 1000 :
     (AppState.getExpectedTime(exercise.id) / (exercise.exerciseTypes.countType.count )));
