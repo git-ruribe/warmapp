@@ -676,53 +676,32 @@ const UI = {
   },
   
   // Pasar al siguiente ejercicio
-  nextExercise() {
-    console.log("UI.nextExercise() called");
-    
+  nextExercise() {    
     const exercise = AppState.getCurrentExercise();
-    console.log("Checking for steps...", exercise)
-    
-    // Si el ejercicio tiene pasos múltiples
-    if (exercise.steps && exercise.steps.length > 1) {
-      console.log("Exercise has steps. Current step:", this.state.currentStep);
-      // Incrementar el paso actual
-      this.state.currentStep++;
-      console.log("Incremented step. New step:", this.state.currentStep);
-
-      // Si quedan más pasos en el mismo ejercicio
-      if (this.state.currentStep < this.state.totalSteps) {
-        this.startExerciseCounter(); // Reiniciar contador solo si hay más pasos
-        return; // Importante: salir de la función para no avanzar al siguiente ejercicio todavía
-      }
-      console.log("All steps completed. Moving to next exercise.")
-    } else {
-      console.log("No steps. Moving to next exercise.")
+  
+    // Si no hay ejercicios, finalizar el entrenamiento
+    if (!exercise) {
+      this.showWorkoutSummary();
+      return;
     }
-
-    // Si no hay más pasos, avanzar al siguiente ejercicio
+  
     // Reiniciar el paso para el siguiente ejercicio
-    this.state.currentStep = 0;
-    const nextExercise = AppState.nextExercise();    
-    console.log("AppState.nextExercise() returned:", nextExercise)
-
-    if (nextExercise) {
-      console.log("Setting next exercise:", nextExercise)
-      // Establecer nuevo ejercicio
-      this.setExercise(nextExercise);
-
-      // Reiniciar contador
-
-      this.startExerciseCounter();
-    } else {
-      console.log("No more exercises. Showing summary.")
-      // Fin del entrenamiento
-      this.showWorkoutSummary()
-    }
+    this.state.currentStep = 0;    
+    this.nextStepOrExercise(exercise);    
   },
 
-
-nextExercise() {
-  const exercise = AppState.getCurrentExercise();
+  // Avanzar al siguiente paso o ejercicio
+  nextStepOrExercise(exercise) {
+  if (!exercise) {
+    const nextExercise = AppState.nextExercise();
+    if(nextExercise){
+      this.setExercise(nextExercise);
+      this.startExerciseCounter();
+      return;
+    }
+    this.showWorkoutSummary();
+    return;
+  }
 
   // Si el ejercicio tiene pasos múltiples
   if (exercise.steps && exercise.steps.length > 1) {
@@ -730,26 +709,20 @@ nextExercise() {
     this.state.currentStep++;
 
     // Si quedan más pasos en el mismo ejercicio
-    if (this.state.currentStep < this.state.totalSteps) {
-      this.startExerciseCounter(); // Reiniciar contador solo si hay más pasos
-      return; // Importante: salir de la función para no avanzar al siguiente ejercicio todavía
+    if (this.state.currentStep < this.state.totalSteps) {      
+      this.startExerciseCounter();      
+    } else{
+      this.state.currentStep = 0;
+      const nextExercise = AppState.nextExercise();
+      if(nextExercise){
+        this.setExercise(nextExercise);
+        this.startExerciseCounter();
+        return;
+      }
+      this.showWorkoutSummary();
     }
-  }
-
-  // Si no hay más pasos, avanzar al siguiente ejercicio
-  // Reiniciar el paso para el siguiente ejercicio
-  this.state.currentStep = 0;
-  const nextExercise = AppState.nextExercise();
-
-  if (nextExercise) {
-    // Establecer nuevo ejercicio
-    this.setExercise(nextExercise);
-
-    // Reiniciar contador
-    this.startExerciseCounter();
   } else {
-    // Fin del entrenamiento
-    this.showWorkoutSummary();
+    this.nextStepOrExercise(null)
   }
 },
     
