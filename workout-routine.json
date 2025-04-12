@@ -8,7 +8,6 @@
           "id": "tobillos-circulos",
           "title": "Círculos de Tobillo",
           "exerciseTypes": {
-            
             "countType": {
               "value": "repetitions",
               "count": 20
@@ -26,43 +25,47 @@
               "count": 10,
               "side": "derecho",
               "direction": "reloj",
-              "description": "10 giros hacia afuera del tobillo derecho"
+              "description": "Gira el tobillo derecho hacia afuera completando 10 círculos amplios y controlados"
             },
             {
               "count": 10,
               "side": "izquierdo",
               "direction": "reloj",
-              "description": "10 giros hacia afuera del tobillo izquierdo"
+              "description": "Gira el tobillo izquierdo hacia afuera completando 10 círculos amplios y controlados"
             },
             {
               "count": 10,
               "side": "derecho",
               "direction": "contrareloj",
-              "description": "10 giros hacia adentro del tobillo derecho"
+              "description": "Gira el tobillo derecho hacia adentro completando 10 círculos amplios y controlados"
             },
             {
               "count": 10,
               "side": "izquierdo",
               "direction": "contrareloj",
-              "description": "10 giros hacia adentro del tobillo izquierdo"
+              "description": "Gira el tobillo izquierdo hacia adentro completando 10 círculos amplios y controlados"
             }
           ],
           "detailedInstructions": {
-            "purpose": "Preparar las articulaciones de los tobillos para el movimiento, aumentando su rango de movilidad y flexibilidad.",
+            "purpose": "Activar y lubricar las articulaciones de los tobillos para prevenir lesiones y mejorar su rango de movilidad antes de realizar ejercicios más intensos.",
             "technique": [
-              "Mantén la pierna estable mientras giras el tobillo",
-              "Realiza movimientos circulares suaves y controlados",
-              "No fuerces el movimiento más allá de tu rango de flexibilidad"
+              "Siéntate o apóyate en una superficie estable si lo necesitas para mantener el equilibrio",
+              "Mantén la pierna ligeramente elevada y estable mientras realizas el movimiento",
+              "Realiza movimientos circulares completos, lentos y controlados",
+              "Visualiza que estás dibujando un círculo perfecto con la punta del pie",
+              "No fuerces el movimiento si sientes molestia o dolor"
             ],
             "benefits": [
-              "Reduce el riesgo de lesiones en tobillos",
-              "Mejora la flexibilidad articular",
-              "Activa la circulación sanguínea en los tobillos"
+              "Reduce significativamente el riesgo de lesiones en los tobillos durante la actividad física",
+              "Mejora la flexibilidad y lubricación articular para movimientos más eficientes",
+              "Activa la circulación sanguínea en los tobillos y pies, preparándolos para el ejercicio",
+              "Mejora la propiocepción (conciencia espacial) de las articulaciones inferiores"
             ],
             "commonMistakes": [
-              "Realizar movimientos bruscos o rápidos",
-              "Hacer círculos muy pequeños",
-              "Tensar los músculos de la pierna"
+              "Realizar movimientos bruscos o demasiado rápidos que pueden causar tensión",
+              "Hacer círculos muy pequeños que no aprovechan todo el rango de movimiento",
+              "Tensar excesivamente los músculos de la pierna en lugar de mantenerla relajada",
+              "No completar círculos completos, limitando los beneficios del ejercicio"
             ]
           }
         },
@@ -86,30 +89,34 @@
             {
               "count": 5,
               "side": "derecho",
-              "description": "Tobillo derecho"
+              "description": "Flexiona el pie derecho hacia arriba y luego hacia abajo 5 veces completas, controlando el movimiento"
             },
             {
               "count": 5,
               "side": "izquierdo",
-              "description": "Tobillo izquierdo"
+              "description": "Flexiona el pie izquierdo hacia arriba y luego hacia abajo 5 veces completas, controlando el movimiento"
             }
           ],
           "detailedInstructions": {
-            "purpose": "Aumentar la movilidad y flexibilidad de los tobillos, preparándolos para el movimiento.",
+            "purpose": "Aumentar la movilidad y flexibilidad de los tobillos en dirección anteroposterior, fundamental para actividades como caminar, correr y saltar.",
             "technique": [
-              "Mueve el pie hacia arriba (flexión) y hacia abajo (extensión)",
-              "Mantén los movimientos suaves y controlados",
-              "No uses fuerza, deja que sea un movimiento natural"
+              "Siéntate o mantente de pie con apoyo si es necesario para mayor estabilidad",
+              "Eleva la punta del pie hacia la espinilla (flexión dorsal) hasta sentir un estiramiento suave",
+              "Luego, apunta los dedos hacia abajo (flexión plantar) extendiendo completamente",
+              "Mantén los movimientos fluidos y controlados, evitando movimientos bruscos",
+              "Concéntrate en utilizar solo los músculos del tobillo y pie, no la pierna completa"
             ],
             "benefits": [
-              "Mejora la flexibilidad del tobillo",
-              "Previene rigidez muscular",
-              "Aumenta el rango de movimiento"
+              "Mejora la flexibilidad y rango de movimiento del tobillo en ambas direcciones",
+              "Fortalece los músculos tibiales y peroneos que estabilizan el tobillo",
+              "Previene lesiones comunes como esguinces y torceduras durante actividades más intensas",
+              "Mejora la mecánica de marcha y carrera al aumentar la movilidad del tobillo"
             ],
             "commonMistakes": [
-              "Realizar movimientos bruscos",
-              "Mover toda la pierna en lugar de solo el tobillo",
-              "No mantener una postura estable"
+              "Realizar movimientos demasiado rápidos o descontrolados que reducen los beneficios",
+              "Mover toda la pierna en lugar de aislar el movimiento en el tobillo",
+              "No alcanzar el rango completo de movimiento en ambas direcciones",
+              "Tensar innecesariamente los músculos de la pantorrilla durante el ejercicio"
             ]
           }
         },
@@ -129,22 +136,38 @@
             }
           },
           "expectedTime": 30,
+          "steps": [
+            {
+              "count": 5,
+              "direction": "interna",
+              "description": "Realiza 5 rotaciones internas de ambas rodillas simultáneamente, manteniendo los pies apoyados"
+            },
+            {
+              "count": 5,
+              "direction": "externa",
+              "description": "Realiza 5 rotaciones externas de ambas rodillas simultáneamente, manteniendo los pies apoyados"
+            }
+          ],
           "detailedInstructions": {
-            "purpose": "Preparar las articulaciones de las rodillas para el movimiento, mejorando su movilidad.",
+            "purpose": "Movilizar las articulaciones de las rodillas en un patrón rotativo controlado para mejorar la lubricación articular y preparar las rodillas para movimientos más exigentes.",
             "technique": [
-              "Coloca las manos suavemente sobre las rodillas",
-              "Realiza rotaciones suaves y controladas",
-              "Mantén los movimientos dentro de un rango cómodo"
+              "Colócate de pie con los pies separados al ancho de la cadera y las rodillas ligeramente flexionadas",
+              "Coloca las manos suavemente sobre las rodillas como guía del movimiento",
+              "Dibuja círculos suaves con las rodillas sin mover los pies del suelo",
+              "Mantén el torso erguido y estable durante todo el ejercicio",
+              "Realiza movimientos lentos y controlados dentro de un rango cómodo"
             ],
             "benefits": [
-              "Reduce la rigidez en las rodillas",
-              "Mejora la lubricación articular",
-              "Previene molestias durante el ejercicio"
+              "Reduce la rigidez articular en las rodillas mejorando su lubricación natural",
+              "Aumenta la movilidad circular de la rodilla, preparándola para movimientos multidireccionales",
+              "Activa los músculos estabilizadores alrededor de la rodilla para mayor protección",
+              "Mejora la propiocepción (conciencia espacial) de la articulación"
             ],
             "commonMistakes": [
-              "Realizar rotaciones bruscas",
-              "Forzar el rango de movimiento",
-              "No mantener una postura estable"
+              "Realizar rotaciones bruscas o demasiado amplias que pueden estresar la articulación",
+              "Forzar el rango de movimiento más allá del punto de comodidad",
+              "Hundir el pecho o curvar la espalda durante el ejercicio",
+              "Bloquear las rodillas en lugar de mantenerlas ligeramente flexionadas"
             ]
           }
         },
@@ -164,23 +187,36 @@
             }
           },
           "expectedTime": 30,
+          "steps": [
+            {
+              "count": 5,
+              "description": "Realiza 5 mini sentadillas descendiendo solo hasta un cuarto del recorrido, manteniendo la espalda recta"
+            },
+            {
+              "count": 5,
+              "description": "Realiza 5 mini sentadillas con un descenso ligeramente más profundo, hasta un tercio del recorrido"
+            }
+          ],
           "detailedInstructions": {
-            "purpose": "Activar los músculos de las piernas y preparar las articulaciones para el movimiento.",
+            "purpose": "Activar suavemente los músculos de las piernas y preparar las articulaciones de rodilla y cadera para movimientos más intensos, sin fatigarse demasiado pronto.",
             "technique": [
-              "Mantén la espalda recta",
-              "Flexiona ligeramente las rodillas",
-              "Realiza movimientos suaves y controlados",
-              "No desciendes completamente, son mini sentadillas"
+              "Párate con los pies separados al ancho de los hombros y ligeramente girados hacia afuera",
+              "Mantén la espalda recta y el pecho elevado en todo momento",
+              "Baja solo un 20-30% de una sentadilla completa, como si fueras a sentarte en una silla alta",
+              "Distribuye el peso del cuerpo en los talones y la parte media del pie, nunca en las puntas",
+              "Extiende los brazos hacia adelante para mantener el equilibrio si es necesario"
             ],
             "benefits": [
-              "Activa los músculos de las piernas",
-              "Mejora la estabilidad articular",
-              "Prepara el cuerpo para movimientos más intensos"
+              "Activa de forma segura los músculos cuádriceps, isquiotibiales y glúteos sin sobrecargarlos",
+              "Mejora la estabilidad articular en rodillas, tobillos y caderas",
+              "Prepara las articulaciones para soportar el peso corporal en movimientos más exigentes",
+              "Inicia el calentamiento metabólico sin fatiga prematura"
             ],
             "commonMistakes": [
-              "Hacer sentadillas completas",
-              "Inclinar la espalda",
-              "Mover las rodillas hacia adentro o afuera"
+              "Descender demasiado profundo convirtiendo el ejercicio en una sentadilla completa",
+              "Inclinar la espalda hacia adelante comprometiendo la columna lumbar",
+              "Permitir que las rodillas se desplacen hacia adentro (valgo) o hacia afuera (varo)",
+              "Elevar los talones del suelo durante el descenso, trasladando la presión a las puntas"
             ]
           }
         },
@@ -200,22 +236,38 @@
             }
           },
           "expectedTime": 30,
+          "steps": [
+            {
+              "count": 5,
+              "direction": "derecha",
+              "description": "Realiza 5 círculos completos con las caderas girando hacia la derecha, manteniendo el movimiento fluido"
+            },
+            {
+              "count": 5,
+              "direction": "izquierda",
+              "description": "Realiza 5 círculos completos con las caderas girando hacia la izquierda, manteniendo el movimiento fluido"
+            }
+          ],
           "detailedInstructions": {
-            "purpose": "Movilizar la articulación de la cadera, mejorando su flexibilidad y rango de movimiento.",
+            "purpose": "Movilizar la articulación de la cadera en un patrón circular completo, mejorando su flexibilidad tridimensional y preparándola para movimientos dinámicos.",
             "technique": [
-              "Mantén las manos en la cintura",
-              "Realiza círculos amplios y controlados",
-              "Mantén el torso estable"
+              "Colócate de pie con los pies separados al ancho de la cadera y las rodillas ligeramente flexionadas",
+              "Coloca las manos en la cintura como punto de referencia para sentir el movimiento",
+              "Realiza círculos amplios y controlados con las caderas, como si estuvieras usando un hula-hoop",
+              "Mantén el torso erguido y la parte superior del cuerpo relativamente estable",
+              "Visualiza que dibujas un círculo completo y perfecto con la cadera"
             ],
             "benefits": [
-              "Aumenta la movilidad de la cadera",
-              "Reduce la rigidez muscular",
-              "Prepara la zona para movimientos más intensos"
+              "Aumenta la movilidad tridimensional de la cadera, fundamental para la mayoría de los movimientos atléticos",
+              "Reduce la tensión acumulada en la zona lumbar y pélvica",
+              "Mejora la circulación sanguínea en la región de la cadera y zona pélvica",
+              "Activa los músculos estabilizadores profundos de la pelvis y el core"
             ],
             "commonMistakes": [
-              "Hacer círculos muy pequeños",
-              "Mover todo el cuerpo en lugar de solo la cadera",
-              "Realizar movimientos bruscos"
+              "Hacer círculos demasiado pequeños que no aprovechan el rango completo de movimiento",
+              "Mover excesivamente la parte superior del cuerpo en lugar de aislar el movimiento en la cadera",
+              "Realizar movimientos bruscos o descontrolados que pueden causar tensión",
+              "No mantener una base estable con las piernas, comprometiendo el equilibrio"
             ]
           }
         },
@@ -239,30 +291,34 @@
             {
               "count": 2,
               "side": "derecho",
-              "description": "Balanceo de pierna derecha"
+              "description": "Balancea la pierna derecha hacia adelante y atrás de forma controlada, manteniendo el torso erguido"
             },
             {
               "count": 3,
               "side": "izquierdo",
-              "description": "Balanceo de pierna izquierda"
+              "description": "Balancea la pierna izquierda hacia adelante y atrás de forma controlada, manteniendo el torso erguido"
             }
           ],
           "detailedInstructions": {
-            "purpose": "Movilizar la articulación de la cadera y preparar los músculos para el movimiento.",
+            "purpose": "Movilizar la articulación de la cadera en el plano sagital (adelante-atrás) para mejorar su amplitud de movimiento y activar los flexores y extensores de cadera.",
             "technique": [
-              "Mantén el torso derecho y estable",
-              "Balancea la pierna de manera controlada",
-              "El movimiento incluye adelante y atrás en un solo ciclo"
+              "Mantente de pie con una postura erguida y apóyate ligeramente en una pared o silla si necesitas equilibrio",
+              "Balancea una pierna hacia adelante y atrás de manera controlada, manteniendo una ligera flexión en la rodilla",
+              "Mantén el torso completamente estable y erguido durante todo el movimiento",
+              "Controla activamente el balanceo con los músculos de la cadera, no dejes que sea un movimiento pasivo",
+              "Incrementa gradualmente la amplitud del balanceo sin forzar el movimiento"
             ],
             "benefits": [
-              "Aumenta la movilidad de la cadera",
-              "Activa los músculos de la parte inferior del cuerpo",
-              "Mejora el rango de movimiento"
+              "Mejora la movilidad de la cadera en el plano sagital, fundamental para caminar y correr",
+              "Activa de forma progresiva los músculos flexores y extensores de la cadera",
+              "Mejora la coordinación neuromuscular y el control dinámico de la articulación",
+              "Prepara la articulación para movimientos más exigentes como zancadas o sentadillas"
             ],
             "commonMistakes": [
-              "Balancear con demasiada fuerza",
-              "Inclinar el torso durante el movimiento",
-              "No mantener un ritmo constante"
+              "Balancear con demasiada fuerza o velocidad, perdiendo el control del movimiento",
+              "Inclinar el torso hacia adelante o hacia atrás durante el balanceo",
+              "No mantener activos los músculos estabilizadores del core",
+              "Bloquear la rodilla durante el balanceo en lugar de mantenerla ligeramente flexionada"
             ]
           }
         },
@@ -282,22 +338,38 @@
             }
           },
           "expectedTime": 30,
+          "steps": [
+            {
+              "count": 5,
+              "side": "derecha",
+              "description": "Rota el tronco hacia la derecha 5 veces, manteniendo las caderas estables y los brazos abiertos"
+            },
+            {
+              "count": 5,
+              "side": "izquierda",
+              "description": "Rota el tronco hacia la izquierda 5 veces, manteniendo las caderas estables y los brazos abiertos"
+            }
+          ],
           "detailedInstructions": {
-            "purpose": "Aumentar la flexibilidad de la columna y preparar el torso para el movimiento.",
+            "purpose": "Mejorar la movilidad rotacional de la columna vertebral y activar los músculos oblicuos y rotadores del tronco, preparando el cuerpo para movimientos que requieren rotación.",
             "technique": [
-              "Mantén los brazos abiertos",
-              "Gira suavemente el torso a cada lado",
-              "Mantén las caderas estables"
+              "Colócate de pie con los pies separados al ancho de los hombros y las rodillas ligeramente flexionadas",
+              "Extiende los brazos hacia los lados a la altura de los hombros para aumentar el momento rotacional",
+              "Gira el tronco hacia un lado tan lejos como sea cómodo, manteniendo las caderas alineadas al frente",
+              "Utiliza la respiración para potenciar el movimiento: exhala durante la rotación, inhala al centro",
+              "Mantén la mirada en la dirección de la rotación para involucrar también el cuello"
             ],
             "benefits": [
-              "Mejora la movilidad de la columna",
-              "Reduce la rigidez muscular",
-              "Activa los músculos del core"
+              "Aumenta la movilidad rotacional de la columna vertebral, especialmente en la región torácica",
+              "Activa y calienta los músculos oblicuos, rotadores y estabilizadores del tronco",
+              "Mejora la coordinación entre la parte superior e inferior del cuerpo",
+              "Prepara el cuerpo para movimientos deportivos que requieren rotación como golpes o lanzamientos"
             ],
             "commonMistakes": [
-              "Girar con demasiada rapidez",
-              "Mover las caderas durante la rotación",
-              "No mantener una postura erguida"
+              "Girar con demasiada rapidez o fuerza, pudiendo causar tensión en la columna",
+              "Permitir que las caderas roten junto con el tronco, perdiendo la estabilidad de la base",
+              "No mantener los hombros relajados y nivelados durante la rotación",
+              "Flexionar el tronco lateralmente en lugar de realizar una rotación pura"
             ]
           }
         },
@@ -317,22 +389,38 @@
             }
           },
           "expectedTime": 30,
+          "steps": [
+            {
+              "count": 2,
+              "side": "derecha",
+              "description": "Inclina el tronco lateralmente hacia la derecha, deslizando la mano por el lateral del muslo"
+            },
+            {
+              "count": 3,
+              "side": "izquierda",
+              "description": "Inclina el tronco lateralmente hacia la izquierda, deslizando la mano por el lateral del muslo"
+            }
+          ],
           "detailedInstructions": {
-            "purpose": "Estirar y movilizar los músculos laterales del torso.",
+            "purpose": "Mejorar la flexibilidad lateral de la columna vertebral y estirar los músculos del costado (cuadrado lumbar, oblicuos y latísimo), creando mayor amplitud de movimiento lateral.",
             "technique": [
-              "Mantén una postura erguida",
-              "Inclínate suavemente a cada lado",
-              "No uses fuerza, deja que sea un movimiento natural"
+              "Colócate de pie con los pies separados al ancho de los hombros para una base estable",
+              "Deja que un brazo descanse junto al cuerpo mientras el otro se extiende por encima de la cabeza",
+              "Inclina lentamente el tronco hacia un lado, creando una curva suave con la columna",
+              "Desliza la mano del brazo inferior por el lateral del muslo para guiar el movimiento",
+              "Mantén ambos pies completamente apoyados y evita inclinarte hacia adelante o atrás"
             ],
             "benefits": [
-              "Mejora la flexibilidad lateral",
-              "Estira los músculos del costado",
-              "Aumenta la movilidad de la columna"
+              "Mejora la flexibilidad lateral de la columna, especialmente en la región torácica y lumbar",
+              "Estira los músculos intercostales y del costado que suelen tensarse con el sedentarismo",
+              "Potencia la capacidad respiratoria al liberar tensión en los músculos intercostales",
+              "Mejora la conciencia corporal y el control del movimiento lateral"
             ],
             "commonMistakes": [
-              "Inclinar demasiado",
-              "Mover las caderas",
-              "No mantener la espalda recta"
+              "Inclinarse demasiado, forzando la posición más allá del punto de tensión confortable",
+              "Rotar el tronco o las caderas durante la inclinación, perdiendo el plano puramente lateral",
+              "Elevar el talón del lado opuesto a la inclinación, desestabilizando la postura",
+              "Contener la respiración durante el estiramiento en lugar de mantenerla fluida"
             ]
           }
         },
@@ -352,22 +440,38 @@
             }
           },
           "expectedTime": 30,
+          "steps": [
+            {
+              "count": 5,
+              "position": "cuadrupedia",
+              "description": "Posición de 'Cat': redondea la columna hacia arriba mientras exhalas, bajando la cabeza"
+            },
+            {
+              "count": 5,
+              "position": "cuadrupedia",
+              "description": "Posición de 'Cow': arquea la columna hacia abajo mientras inhalas, elevando la cabeza y el cóccix"
+            }
+          ],
           "detailedInstructions": {
-            "purpose": "Movilizar la columna, mejorando su flexibilidad y liberando tensión.",
+            "purpose": "Movilizar la columna vertebral en flexión y extensión, mejorando su flexibilidad, liberando tensión acumulada y estableciendo una conexión entre movimiento y respiración.",
             "technique": [
-              "Alterna entre arquear y redondear la espalda",
-              "Sincroniza el movimiento con la respiración",
-              "Realiza el movimiento de manera suave y controlada"
+              "Colócate en posición de cuadrupedia con las manos bajo los hombros y las rodillas bajo las caderas",
+              "Para la posición 'Cat': exhala mientras redondeas la espalda hacia el techo, contrayendo el abdomen y llevando el mentón hacia el pecho",
+              "Para la posición 'Cow': inhala mientras arqueas la espalda hacia abajo, elevando la cabeza y el cóccix, abriendo el pecho",
+              "Realiza los movimientos de manera fluida, permitiendo que cada vértebra se articule individualmente",
+              "Sincroniza conscientemente cada movimiento con la respiración para maximizar la movilidad"
             ],
             "benefits": [
-              "Mejora la flexibilidad de la columna",
-              "Alivia la tensión muscular",
-              "Mejora la postura"
+              "Mejora la flexibilidad y movilidad de toda la columna en los movimientos de flexión y extensión",
+              "Alivia la tensión acumulada en la espalda, especialmente después de largos períodos sentado",
+              "Fortalece la conexión mente-cuerpo a través de la sincronización del movimiento con la respiración",
+              "Prepara la espalda para actividades más intensas, reduciendo el riesgo de lesiones"
             ],
             "commonMistakes": [
-              "Movimientos bruscos",
-              "No sincronizar con la respiración",
-              "No mantener un ritmo constante"
+              "Realizar movimientos bruscos sin respetar el propio ritmo de la respiración",
+              "Mantener los hombros tensos o elevados en lugar de relajados y alejados de las orejas",
+              "No involucrar toda la columna vertebral, moviendo solo ciertas secciones",
+              "Mantener una respiración superficial o descoordinada con el movimiento"
             ]
           }
         },
@@ -387,22 +491,38 @@
             }
           },
           "expectedTime": 30,
+          "steps": [
+            {
+              "count": 10,
+              "direction": "adelante",
+              "description": "Realiza 10 círculos completos con ambos hombros hacia adelante, moviendo de forma amplia y controlada"
+            },
+            {
+              "count": 10,
+              "direction": "atrás",
+              "description": "Realiza 10 círculos completos con ambos hombros hacia atrás, moviendo de forma amplia y controlada"
+            }
+          ],
           "detailedInstructions": {
-            "purpose": "Preparar los hombros para el movimiento, mejorando su movilidad.",
+            "purpose": "Movilizar la articulación del hombro en un patrón circular completo para mejorar su flexibilidad, reducir tensiones y preparar la cintura escapular para movimientos más exigentes.",
             "technique": [
-              "Realiza 10 círculos hacia adelante",
-              "Luego realiza 10 círculos hacia atrás",
-              "Mantén los movimientos suaves y controlados"
+              "Mantente de pie o sentado con la espalda recta y el pecho ligeramente elevado",
+              "Realiza círculos amplios y deliberados con ambos hombros simultáneamente",
+              "Para los círculos hacia adelante: eleva los hombros, llévalos hacia adelante, bájalos y regresa a la posición inicial",
+              "Para los círculos hacia atrás: eleva los hombros, llévalos hacia atrás, bájalos y regresa a la posición inicial",
+              "Mantén el resto del cuerpo estable y concentra el movimiento en la articulación del hombro"
             ],
             "benefits": [
-              "Mejora la movilidad de los hombros",
-              "Reduce la rigidez muscular",
-              "Previene lesiones"
+              "Mejora la movilidad completa de la articulación glenohumeral y la escápula",
+              "Reduce la tensión acumulada en los músculos trapecio y elevador de la escápula",
+              "Previene problemas comunes como el hombro congelado o el síndrome del manguito rotador",
+              "Prepara la cintura escapular para movimientos que requieren estabilidad y movilidad"
             ],
             "commonMistakes": [
-              "Realizar círculos muy pequeños",
-              "Movimientos bruscos",
-              "No mantener una postura estable"
+              "Realizar círculos muy pequeños que no aprovechan todo el rango de movimiento articular",
+              "Ejecutar movimientos rápidos y descontrolados que limitan los beneficios del ejercicio",
+              "Elevar excesivamente los hombros hacia las orejas, creando tensión innecesaria",
+              "No mantener una postura erguida, lo que compromete la efectividad del ejercicio"
             ]
           }
         },
@@ -422,22 +542,36 @@
             }
           },
           "expectedTime": 30,
+          "steps": [
+            {
+              "count": 5,
+              "description": "Cruza los brazos frente al pecho y luego ábrelos ampliamente hacia los lados como un abrazo"
+            },
+            {
+              "count": 5,
+              "description": "Aumenta ligeramente la velocidad manteniendo el control, sintiendo la apertura del pecho"
+            }
+          ],
           "detailedInstructions": {
-            "purpose": "Movilizar los hombros y los músculos de la parte superior del cuerpo.",
+            "purpose": "Movilizar las articulaciones de los hombros, mejorar la flexibilidad de la parte superior del cuerpo y activar los músculos pectorales y de la espalda alta.",
             "technique": [
-              "Cruza los brazos al frente",
-              "Abre los brazos como un abrazo",
-              "Realiza el movimiento de manera suave"
+              "Mantente de pie con la espalda recta y el pecho ligeramente elevado",
+              "Cruza los brazos frente al pecho, abrazándote a ti mismo suavemente",
+              "Abre completamente los brazos hacia los lados, como si estuvieras abrazando el mundo",
+              "Alterna entre cruzar el brazo derecho por encima del izquierdo y viceversa",
+              "Realiza el movimiento de manera fluida, como si estuvieras dibujando un arco con los brazos"
             ],
             "benefits": [
-              "Mejora la flexibilidad de los hombros",
-              "Activa los músculos de la parte superior del cuerpo",
-              "Prepara para movimientos más intensos"
+              "Mejora la movilidad de las articulaciones del hombro y la escápula",
+              "Activa los músculos pectorales, deltoides y romboides de manera controlada",
+              "Favorece la apertura del pecho, contrarrestando la postura encorvada típica del trabajo sedentario",
+              "Promueve una mejor postura y conciencia corporal de la parte superior del cuerpo"
             ],
             "commonMistakes": [
-              "Movimientos bruscos",
-              "No mantener los brazos a la misma altura",
-              "Tensionar demasiado los músculos"
+              "Realizar movimientos bruscos o descoordinados que pueden generar tensión",
+              "No mantener los brazos a la misma altura durante todo el recorrido",
+              "Tensar excesivamente los músculos del cuello y hombros durante el ejercicio",
+              "No completar la apertura total de los brazos, limitando los beneficios del estiramiento"
             ]
           }
         },
@@ -457,22 +591,36 @@
             }
           },
           "expectedTime": 30,
+          "steps": [
+            {
+              "count": 5,
+              "description": "Eleva ambos hombros hacia las orejas, mantén brevemente y suelta con control"
+            },
+            {
+              "count": 5,
+              "description": "Eleva los hombros alternadamente: primero el derecho, luego el izquierdo"
+            }
+          ],
           "detailedInstructions": {
-            "purpose": "Liberar tensión en los hombros y cuello.",
+            "purpose": "Liberar la tensión acumulada en los músculos del trapecio y la zona cervical, mejorando la circulación y reduciendo la rigidez en hombros y cuello.",
             "technique": [
-              "Eleva los hombros hacia las orejas",
-              "Relaja suavemente",
-              "Mantén un movimiento controlado"
+              "Mantente de pie o sentado con la espalda recta y la mirada al frente",
+              "Eleva ambos hombros hacia las orejas de manera controlada, como si quisieras tocarlas",
+              "Mantén la elevación durante 1-2 segundos, sintiendo la contracción muscular",
+              "Relaja completamente los hombros, dejándolos caer sin forzar",
+              "Respira de manera consciente: inhala al elevar y exhala al relajar"
             ],
             "benefits": [
-              "Reduce la tensión muscular",
-              "Mejora la movilidad de los hombros",
-              "Alivia la rigidez del cuello"
+              "Reduce significativamente la tensión acumulada en la zona del trapecio superior",
+              "Mejora la circulación sanguínea en el área cervical y de los hombros",
+              "Alivia la rigidez causada por el estrés o largas horas frente a la computadora",
+              "Aumenta la conciencia corporal sobre cuándo estás manteniendo los hombros tensos"
             ],
             "commonMistakes": [
-              "Elevar los hombros con brusquedad",
-              "Mantener los hombros elevados",
-              "No relajar completamente"
+              "Elevar los hombros con brusquedad, creando más tensión en lugar de aliviarla",
+              "Mantener los hombros elevados durante demasiado tiempo, fatigando los músculos",
+              "No relajar completamente los hombros entre repeticiones",
+              "Tensar el cuello o la mandíbula durante el ejercicio, trasladando la tensión"
             ]
           }
         },
@@ -492,22 +640,40 @@
             }
           },
           "expectedTime": 30,
+          "steps": [
+            {
+              "count": 10,
+              "side": "ambos",
+              "direction": "interior",
+              "description": "Realiza 10 círculos con ambas muñecas simultáneamente hacia el interior (hacia el cuerpo)"
+            },
+            {
+              "count": 10,
+              "side": "ambos",
+              "direction": "exterior",
+              "description": "Realiza 10 círculos con ambas muñecas simultáneamente hacia el exterior (alejándose del cuerpo)"
+            }
+          ],
           "detailedInstructions": {
-            "purpose": "Preparar las articulaciones de las muñecas para el movimiento, mejorando su flexibilidad.",
+            "purpose": "Movilizar las articulaciones de las muñecas en un patrón circular completo para mejorar su flexibilidad, reducir la rigidez y preparar las manos para actividades que requieren destreza.",
             "technique": [
-              "Realiza círculos completos con cada muñeca",
-              "Mantén los movimientos suaves y controlados",
-              "Alterna direcciones"
+              "Extiende los brazos frente a ti con los codos ligeramente flexionados",
+              "Mantén las manos relajadas y los dedos ligeramente extendidos",
+              "Realiza círculos completos y amplios con las muñecas, manteniendo los antebrazos estables",
+              "Alterna la dirección de los círculos: hacia adentro (hacia el cuerpo) y hacia afuera (alejándose)",
+              "Intenta que el movimiento sea fluido y controlado, como si dibujaras círculos perfectos con los dedos"
             ],
             "benefits": [
-              "Mejora la movilidad de las muñecas",
-              "Reduce el riesgo de lesiones",
-              "Activa la circulación en las articulaciones"
+              "Mejora la movilidad articular de las muñecas en todos los planos de movimiento",
+              "Reduce el riesgo de lesiones como tendinitis o síndrome del túnel carpiano",
+              "Activa la circulación sanguínea en las manos y antebrazos, preparándolos para el ejercicio",
+              "Aumenta la lubricación articular, reduciendo la sensación de rigidez o chasquidos"
             ],
             "commonMistakes": [
-              "Realizar movimientos bruscos",
-              "Hacer círculos muy pequeños",
-              "Tensar los músculos del brazo"
+              "Realizar movimientos bruscos o demasiado rápidos, que pueden forzar la articulación",
+              "Hacer círculos muy pequeños que no aprovechan todo el rango de movimiento",
+              "Tensar los músculos del antebrazo durante la rotación, limitando la fluidez",
+              "No completar círculos enteros, reduciendo los beneficios del ejercicio"
             ]
           }
         },
@@ -527,22 +693,42 @@
             }
           },
           "expectedTime": 30,
+          "steps": [
+            {
+              "count": 2,
+              "side": "derecha",
+              "description": "Gira suavemente la cabeza hacia la derecha, manteniendo brevemente y regresando al centro"
+            },
+            {
+              "count": 2,
+              "side": "izquierda",
+              "description": "Gira suavemente la cabeza hacia la izquierda, manteniendo brevemente y regresando al centro"
+            },
+            {
+              "count": 1,
+              "description": "Inclina suavemente la cabeza hacia adelante, sintiendo un estiramiento en la nuca"
+            }
+          ],
           "detailedInstructions": {
-            "purpose": "Liberar tensión en el cuello y preparar la zona para el movimiento.",
+            "purpose": "Liberar la tensión acumulada en la musculatura del cuello, mejorar la movilidad cervical y preparar la zona para movimientos más dinámicos, reduciendo el riesgo de molestias o lesiones.",
             "technique": [
-              "Realiza rotaciones suaves",
-              "Evita hacer círculos completos",
-              "Mantén los movimientos lentos y controlados"
+              "Siéntate o mantente de pie con la espalda recta y los hombros relajados",
+              "Comienza llevando la barbilla hacia el pecho suavemente, sintiendo el estiramiento en la nuca",
+              "Gira lentamente la cabeza hacia un lado, manteniendo la posición durante 2-3 segundos",
+              "Regresa al centro y repite hacia el otro lado con movimientos lentos y controlados",
+              "IMPORTANTE: Evita llevar la cabeza hacia atrás o realizar círculos completos para proteger las vértebras cervicales"
             ],
             "benefits": [
-              "Reduce la rigidez del cuello",
-              "Mejora la movilidad cervical",
-              "Alivia la tensión muscular"
+              "Reduce la rigidez y tensión acumulada en los músculos del cuello y zona cervical",
+              "Mejora la movilidad articular de las vértebras cervicales de manera segura",
+              "Alivia dolores asociados al estrés o a malas posturas mantenidas durante el día",
+              "Prepara el cuello para actividades que requieren girar la cabeza con frecuencia"
             ],
             "commonMistakes": [
-              "Realizar rotaciones bruscas",
-              "Hacer círculos completos",
-              "Forzar el rango de movimiento"
+              "Realizar rotaciones bruscas o demasiado amplias que podrían lesionar las vértebras cervicales",
+              "Hacer círculos completos con el cuello, lo que puede comprometer la columna cervical",
+              "Forzar el movimiento más allá del punto de tensión confortable",
+              "Tensar los hombros o la mandíbula durante el ejercicio, trasladando la tensión"
             ]
           }
         }
@@ -567,30 +753,50 @@
             }
           },
           "expectedTime": 60,
+          "steps": [
+            {
+              "count": 30,
+              "intensity": "baja",
+              "description": "Primeros 30 segundos: marcha suave elevando ligeramente las rodillas, brazos con movimiento natural"
+            },
+            {
+              "count": 30,
+              "intensity": "moderada",
+              "description": "Últimos 30 segundos: aumenta gradualmente la altura de las rodillas y la velocidad de los brazos"
+            }
+          ],
           "detailedInstructions": {
-            "purpose": "Activar el sistema nervioso y preparar el cuerpo para el movimiento, elevando gradualmente la frecuencia cardíaca.",
+            "purpose": "Activar progresivamente el sistema nervioso y cardiovascular, preparando el cuerpo para el movimiento más intenso y elevando la temperatura corporal de manera gradual y controlada.",
             "technique": [
-              "Inicia con movimientos lentos y controlados",
-              "Levanta las rodillas a una altura cómoda",
-              "Coordina el movimiento de brazos y piernas"
+              "Comienza con una postura erguida, abdomen ligeramente contraído y hombros relajados",
+              "Inicia con pasos suaves y controlados, elevando las rodillas a una altura cómoda",
+              "Coordina el movimiento natural de los brazos: brazo derecho avanza con pierna izquierda y viceversa",
+              "Aumenta gradualmente la altura de las rodillas y la velocidad según tu nivel de comodidad",
+              "Mantén la mirada al frente y el pecho ligeramente elevado durante todo el ejercicio"
             ],
             "breathingTips": [
-              "Mantén una respiración constante y profunda",
-              "Sincroniza la respiración con el movimiento"
+              "Establece un patrón de respiración rítmico y constante desde el inicio",
+              "Inhala profundamente por la nariz durante 2-3 pasos",
+              "Exhala completamente por la boca durante los siguientes 2-3 pasos",
+              "Mantén la respiración diafragmática (abdominal) en lugar de la torácica"
             ],
             "benefits": [
-              "Eleva la frecuencia cardíaca",
-              "Mejora la coordinación",
-              "Prepara el cuerpo para ejercicio más intenso"
+              "Eleva gradualmente la frecuencia cardíaca preparando el sistema cardiovascular",
+              "Mejora la coordinación neuromuscular entre brazos y piernas",
+              "Aumenta la temperatura corporal, mejorando la elasticidad muscular",
+              "Activa el metabolismo energético de manera progresiva y eficiente"
             ],
             "commonMistakes": [
-              "Comenzar muy rápido",
-              "No mantener una postura erguida",
-              "Movimientos descoordinados"
+              "Comenzar con demasiada intensidad, elevando excesivamente el ritmo cardíaco desde el inicio",
+              "No mantener una postura erguida, inclinando el torso hacia adelante",
+              "Realizar movimientos descoordinados entre brazos y piernas",
+              "Mantener una respiración superficial o entrecortada que limita la oxigenación"
             ],
             "modifications": [
-              "Reduce la velocidad si te sientes cansado",
-              "Disminuye la altura de las rodillas si es necesario"
+              "Para menor intensidad: reduce la altura de las rodillas y el movimiento de brazos",
+              "Para mayor estabilidad: mantente cerca de una pared o silla para apoyo si es necesario",
+              "Para personas con problemas de rodilla: reduce la elevación de las piernas",
+              "Para aumentar la intensidad: incorpora pequeños saltos alternando los pies"
             ]
           }
         },
@@ -610,30 +816,50 @@
             }
           },
           "expectedTime": 60,
+          "steps": [
+            {
+              "count": 30,
+              "intensity": "baja",
+              "description": "Primeros 30 segundos: eleva las rodillas alternadamente con pequeños rebotes, brazos coordinados"
+            },
+            {
+              "count": 30,
+              "intensity": "moderada",
+              "description": "Últimos 30 segundos: aumenta ligeramente la velocidad y la altura de las rodillas, manteniendo la técnica"
+            }
+          ],
           "detailedInstructions": {
-            "purpose": "Mejorar la coordinación y activar los músculos de las piernas con un movimiento de baja intensidad.",
+            "purpose": "Desarrollar la coordinación neuromuscular y activar los músculos de las piernas de forma dinámica, aumentando progresivamente la intensidad cardiovascular y preparando el cuerpo para movimientos más explosivos.",
             "technique": [
-              "Eleva las rodillas alternadamente",
-              "Mantén un ritmo controlado",
-              "Coordina el movimiento de brazos"
+              "Mantente sobre la punta de los pies con el peso ligeramente adelantado",
+              "Eleva las rodillas alternadamente con un ligero rebote entre cada elevación",
+              "Mantén los tobillos flexibles, como si rebotaras sobre un muelle",
+              "Coordina el movimiento de los brazos: brazo contrario a la pierna que se eleva",
+              "Mantén el torso erguido y el core ligeramente activado para estabilizar el movimiento"
             ],
             "breathingTips": [
-              "Mantén una respiración rítmica",
-              "Exhala en cada elevación de rodilla"
+              "Establece un ritmo de respiración controlado que puedas mantener durante todo el ejercicio",
+              "Inhala por la nariz durante 2-3 elevaciones de rodilla",
+              "Exhala por la boca durante las siguientes 2-3 elevaciones",
+              "Evita contener la respiración o respirar de manera superficial"
             ],
             "benefits": [
-              "Mejora la coordinación neuromuscular",
-              "Activa los músculos de las piernas",
-              "Prepara el sistema cardiovascular"
+              "Mejora la coordinación neuromuscular entre el tren superior e inferior",
+              "Activa los músculos flexores de cadera, cuádriceps y pantorrillas",
+              "Desarrolla la capacidad reactiva y elástica de los tobillos y pies",
+              "Prepara el sistema cardiovascular para esfuerzos más intensos"
             ],
             "commonMistakes": [
-              "Realizar movimientos muy rápidos",
-              "No coordinar brazos y piernas",
-              "Perder el equilibrio"
+              "Realizar el ejercicio con los talones apoyados, perdiendo el componente pliométrico",
+              "No coordinar correctamente el movimiento de brazos y piernas",
+              "Inclinar excesivamente el torso hacia adelante o hacia atrás",
+              "Elevar las rodillas de manera desigual o con movimientos bruscos"
             ],
             "modifications": [
-              "Reduce la altura de las rodillas si es necesario",
-              "Disminuye la velocidad si te sientes cansado"
+              "Para menor intensidad: reduce la altura de las elevaciones y la velocidad",
+              "Para problemas de impacto: realiza el ejercicio sobre una superficie acolchada",
+              "Para mayor estabilidad: mantente cerca de un apoyo como una pared o silla",
+              "Para aumentar el desafío: incrementa gradualmente la altura de las rodillas"
             ]
           }
         },
@@ -653,30 +879,55 @@
             }
           },
           "expectedTime": 60,
+          "steps": [
+            {
+              "count": 20,
+              "intensity": "muy baja",
+              "description": "Primeros 20 segundos: movimientos reducidos sin saltos, solo separando y juntando pies con brazos coordinados"
+            },
+            {
+              "count": 20,
+              "intensity": "baja",
+              "description": "Segundos 20-40: incorpora pequeños saltos manteniendo un impacto mínimo"
+            },
+            {
+              "count": 20,
+              "intensity": "moderada",
+              "description": "Últimos 20 segundos: aumenta ligeramente la amplitud de los movimientos manteniendo el control"
+            }
+          ],
           "detailedInstructions": {
-            "purpose": "Aumentar la frecuencia cardíaca y mejorar la coordinación general del cuerpo.",
+            "purpose": "Activar de forma global el sistema cardiovascular y múltiples grupos musculares simultáneamente, mejorando la coordinación bilateral y elevando progresivamente la frecuencia cardíaca con un ejercicio de bajo impacto.",
             "technique": [
-              "Comienza con movimientos pequeños",
-              "Aumenta gradualmente la amplitud",
-              "Mantén una respiración fluida"
+              "Comienza con los pies juntos y los brazos a los lados del cuerpo",
+              "Realiza un pequeño salto abriendo las piernas ligeramente más allá del ancho de los hombros",
+              "Simultáneamente, eleva los brazos por los lados hasta que las manos casi se toquen sobre la cabeza",
+              "Con otro pequeño salto, vuelve a la posición inicial, juntando pies y bajando los brazos",
+              "Mantén las rodillas ligeramente flexionadas para absorber el impacto en cada salto"
             ],
             "breathingTips": [
-              "Respira de manera constante",
-              "Sincroniza la respiración con los movimientos"
+              "Establece un ritmo respiratorio constante desde el principio",
+              "Inhala por la nariz cuando los brazos y piernas se separan (apertura)",
+              "Exhala por la boca cuando los brazos y piernas se juntan (cierre)",
+              "Mantén la respiración profunda y controlada incluso al aumentar la intensidad"
             ],
             "benefits": [
-              "Mejora la coordinación",
-              "Aumenta la frecuencia cardíaca",
-              "Activa múltiples grupos musculares"
+              "Mejora la coordinación bilateral entre la parte superior e inferior del cuerpo",
+              "Aumenta la frecuencia cardíaca de manera eficiente activando grandes grupos musculares",
+              "Desarrolla la capacidad cardiovascular y la resistencia muscular de forma integrada",
+              "Activa músculos de hombros, brazos, abdomen, glúteos y piernas simultáneamente"
             ],
             "commonMistakes": [
-              "Comenzar con movimientos muy amplios",
-              "Perder el ritmo de respiración",
-              "No mantener el equilibrio"
+              "Comenzar con movimientos demasiado amplios o intensos antes de calentar adecuadamente",
+              "Perder el ritmo de respiración al aumentar la velocidad del ejercicio",
+              "No mantener las rodillas ligeramente flexionadas, aumentando el impacto en las articulaciones",
+              "Elevar los hombros hacia las orejas, creando tensión innecesaria en el cuello"
             ],
             "modifications": [
-              "Reduce la amplitud de los movimientos",
-              "Disminuye la velocidad si te sientes cansado"
+              "Para menor impacto: realiza el ejercicio sin saltos, solo con pasos laterales",
+              "Para problemas de hombro: limita la elevación de los brazos hasta donde sea cómodo",
+              "Para problemas de equilibrio: reduce la amplitud de la apertura de piernas",
+              "Para aumentar gradualmente: incrementa la altura del salto y la velocidad con el tiempo"
             ]
           }
         },
@@ -696,30 +947,50 @@
             }
           },
           "expectedTime": 60,
+          "steps": [
+            {
+              "count": 30,
+              "side": "derecha",
+              "description": "Rota el tronco hacia la derecha con los brazos extendidos, 30 segundos con movimientos lentos y controlados"
+            },
+            {
+              "count": 30,
+              "side": "izquierda",
+              "description": "Rota el tronco hacia la izquierda con los brazos extendidos, 30 segundos con movimientos lentos y controlados"
+            }
+          ],
           "detailedInstructions": {
-            "purpose": "Mejorar la coordinación y la sincronización del movimiento.",
+            "purpose": "Integrar la movilidad rotacional del tronco con la coordinación respiratoria y el control neuromuscular, preparando el cuerpo para movimientos deportivos que requieren rotación coordinada y estabilidad central.",
             "technique": [
-              "Mantén los brazos extendidos",
-              "Realiza rotaciones de tronco suaves",
-              "Sincroniza la respiración con el movimiento"
+              "Colócate de pie con los pies separados al ancho de los hombros y rodillas ligeramente flexionadas",
+              "Extiende los brazos frente a ti a la altura de los hombros, con los codos ligeramente flexionados",
+              "Rota el tronco hacia un lado mientras mantienes las caderas relativamente estables al frente",
+              "Gira la cabeza en la misma dirección que el tronco para un movimiento integrado",
+              "Regresa al centro y repite hacia el lado opuesto con un movimiento fluido y controlado"
             ],
             "breathingTips": [
-              "Exhala en cada rotación",
-              "Mantén una respiración controlada"
+              "Sincroniza conscientemente la respiración con el movimiento para potenciar la rotación",
+              "Exhala profundamente durante la rotación, facilitando la activación del core",
+              "Inhala al regresar a la posición central, preparándote para la siguiente rotación",
+              "Mantén la respiración profunda y rítmica, evitando contenerla durante el movimiento"
             ],
             "benefits": [
-              "Mejora la coordinación",
-              "Activa los músculos del core",
-              "Aumenta la flexibilidad del tronco"
+              "Mejora la coordinación neuromuscular entre la parte superior e inferior del cuerpo",
+              "Desarrolla la estabilidad del core mientras se moviliza la columna vertebral",
+              "Aumenta la conciencia corporal y el control de los movimientos rotacionales",
+              "Prepara el cuerpo para deportes y actividades que requieren rotación del tronco"
             ],
             "commonMistakes": [
-              "Realizar rotaciones bruscas",
-              "No sincronizar la respiración",
-              "Perder el equilibrio"
+              "Realizar rotaciones bruscas o descontroladas que pueden forzar la columna",
+              "No sincronizar la respiración con el movimiento, perdiendo potencia y control",
+              "Permitir que las caderas giren en exceso, perdiendo la estabilidad del core",
+              "Rotar solo desde la región lumbar en lugar de involucrar toda la columna torácica"
             ],
             "modifications": [
-              "Reduce la amplitud de las rotaciones",
-              "Apóyate si necesitas mantener el equilibrio"
+              "Para menos intensidad: reduce el rango de rotación manteniendo el torso más estable",
+              "Para mayor estabilidad: separa más los pies creando una base más amplia",
+              "Para aumentar el desafío: sostén una pelota o peso ligero con ambas manos",
+              "Para problemas de espalda: reduce el rango de rotación y mantén más activado el core"
             ]
           }
         }
