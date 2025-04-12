@@ -1,730 +1,163 @@
 {
-    "id": "calientapp-workout-routine-v1",
-    "sections": [
-      {
-        "name": "Movilidad Dinámica General",
-        "exercises": [
-          {
-            "id": "tobillos-circulos",
-            "title": "Círculos de Tobillo",
-            "exerciseTypes": {
-              
-              "countType": {
-                "value": "repetitions",
-                "count": 20
-              },
-              "bodyType": {
-                "value": "bilateral"
-              },
-              "movementType": {
-                "value": "compound"
-              }
-            },
-            "expectedTime": 10,
-            "steps": [
-              {
-                "count": 10,
-                "side": "derecho",
-                "direction": "reloj",
-                "description": "10 giros hacia afuera del tobillo derecho"
-              },
-              {
-                "count": 10,
-                "side": "izquierdo",
-                "direction": "reloj",
-                "description": "10 giros hacia afuera del tobillo izquierdo"
-              },
-              {
-                "count": 10,
-                "side": "derecho",
-                "direction": "contrareloj",
-                "description": "10 giros hacia adentro del tobillo derecho"
-              },
-              {
-                "count": 10,
-                "side": "izquierdo",
-                "direction": "contrareloj",
-                "description": "10 giros hacia adentro del tobillo izquierdo"
-              }
-            ],
-            "detailedInstructions": {
-              "purpose": "Preparar las articulaciones de los tobillos para el movimiento, aumentando su rango de movilidad y flexibilidad.",
-              "technique": [
-                "Mantén la pierna estable mientras giras el tobillo",
-                "Realiza movimientos circulares suaves y controlados",
-                "No fuerces el movimiento más allá de tu rango de flexibilidad"
-              ],
-              "benefits": [
-                "Reduce el riesgo de lesiones en tobillos",
-                "Mejora la flexibilidad articular",
-                "Activa la circulación sanguínea en los tobillos"
-              ],
-              "commonMistakes": [
-                "Realizar movimientos bruscos o rápidos",
-                "Hacer círculos muy pequeños",
-                "Tensar los músculos de la pierna"
-              ]
-            }
-          },
-          {
-            "id": "tobillos-flexion",
-            "title": "Flexión y Extensión de Tobillo",
-            "exerciseTypes": {
-              "countType": {
-                "value": "repetitions",
-                "count": 10
-              },
-              "bodyType": {
-                "value": "bilateral"
-              },
-              "movementType": {
-                "value": "simple"
-              }
-            },
-            "expectedTime": 30,
-            "steps": [
-              {
-                "count": 5,
-                "side": "derecho",
-                "description": "Tobillo derecho"
-              },
-              {
-                "count": 5,
-                "side": "izquierdo",
-                "description": "Tobillo izquierdo"
-              }
-            ],
-            "detailedInstructions": {
-              "purpose": "Aumentar la movilidad y flexibilidad de los tobillos, preparándolos para el movimiento.",
-              "technique": [
-                "Mueve el pie hacia arriba (flexión) y hacia abajo (extensión)",
-                "Mantén los movimientos suaves y controlados",
-                "No uses fuerza, deja que sea un movimiento natural"
-              ],
-              "benefits": [
-                "Mejora la flexibilidad del tobillo",
-                "Previene rigidez muscular",
-                "Aumenta el rango de movimiento"
-              ],
-              "commonMistakes": [
-                "Realizar movimientos bruscos",
-                "Mover toda la pierna en lugar de solo el tobillo",
-                "No mantener una postura estable"
-              ]
-            }
-          },
-          {
-            "id": "rodillas-rotaciones",
-            "title": "Rotaciones de Rodillas",
-            "exerciseTypes": {
-              "countType": {
-                "value": "repetitions",
-                "count": 10
-              },
-              "bodyType": {
-                "value": "unilateral"
-              },
-              "movementType": {
-                "value": "simple"
-              }
-            },
-            "expectedTime": 30,
-            "detailedInstructions": {
-              "purpose": "Preparar las articulaciones de las rodillas para el movimiento, mejorando su movilidad.",
-              "technique": [
-                "Coloca las manos suavemente sobre las rodillas",
-                "Realiza rotaciones suaves y controladas",
-                "Mantén los movimientos dentro de un rango cómodo"
-              ],
-              "benefits": [
-                "Reduce la rigidez en las rodillas",
-                "Mejora la lubricación articular",
-                "Previene molestias durante el ejercicio"
-              ],
-              "commonMistakes": [
-                "Realizar rotaciones bruscas",
-                "Forzar el rango de movimiento",
-                "No mantener una postura estable"
-              ]
-            }
-          },
-          {
-            "id": "rodillas-mini-sentadillas",
-            "title": "Mini Sentadillas Parciales",
-            "exerciseTypes": {
-              "countType": {
-                "value": "repetitions",
-                "count": 10
-              },
-              "bodyType": {
-                "value": "unilateral"
-              },
-              "movementType": {
-                "value": "simple"
-              }
-            },
-            "expectedTime": 30,
-            "detailedInstructions": {
-              "purpose": "Activar los músculos de las piernas y preparar las articulaciones para el movimiento.",
-              "technique": [
-                "Mantén la espalda recta",
-                "Flexiona ligeramente las rodillas",
-                "Realiza movimientos suaves y controlados",
-                "No desciendes completamente, son mini sentadillas"
-              ],
-              "benefits": [
-                "Activa los músculos de las piernas",
-                "Mejora la estabilidad articular",
-                "Prepara el cuerpo para movimientos más intensos"
-              ],
-              "commonMistakes": [
-                "Hacer sentadillas completas",
-                "Inclinar la espalda",
-                "Mover las rodillas hacia adentro o afuera"
-              ]
-            }
-          },
-          {
-            "id": "caderas-circulos",
-            "title": "Círculos de Cadera",
-            "exerciseTypes": {
-              "countType": {
-                "value": "repetitions",
-                "count": 10
-              },
-              "bodyType": {
-                "value": "unilateral"
-              },
-              "movementType": {
-                "value": "simple"
-              }
-            },
-            "expectedTime": 30,
-            "detailedInstructions": {
-              "purpose": "Movilizar la articulación de la cadera, mejorando su flexibilidad y rango de movimiento.",
-              "technique": [
-                "Mantén las manos en la cintura",
-                "Realiza círculos amplios y controlados",
-                "Mantén el torso estable"
-              ],
-              "benefits": [
-                "Aumenta la movilidad de la cadera",
-                "Reduce la rigidez muscular",
-                "Prepara la zona para movimientos más intensos"
-              ],
-              "commonMistakes": [
-                "Hacer círculos muy pequeños",
-                "Mover todo el cuerpo en lugar de solo la cadera",
-                "Realizar movimientos bruscos"
-              ]
-            }
-          },
-          {
-            "id": "caderas-balanceos",
-            "title": "Balanceos de Cadera",
-            "exerciseTypes": {
-              "countType": {
-                "value": "repetitions",
-                "count": 5
-              },
-              "bodyType": {
-                "value": "bilateral"
-              },
-              "movementType": {
-                "value": "simple"
-              }
-            },
-            "expectedTime": 30,
-            "steps": [
-              {
-                "count": 2,
-                "side": "derecho",
-                "description": "Balanceo de pierna derecha"
-              },
-              {
-                "count": 3,
-                "side": "izquierdo",
-                "description": "Balanceo de pierna izquierda"
-              }
-            ],
-            "detailedInstructions": {
-              "purpose": "Movilizar la articulación de la cadera y preparar los músculos para el movimiento.",
-              "technique": [
-                "Mantén el torso derecho y estable",
-                "Balancea la pierna de manera controlada",
-                "El movimiento incluye adelante y atrás en un solo ciclo"
-              ],
-              "benefits": [
-                "Aumenta la movilidad de la cadera",
-                "Activa los músculos de la parte inferior del cuerpo",
-                "Mejora el rango de movimiento"
-              ],
-              "commonMistakes": [
-                "Balancear con demasiada fuerza",
-                "Inclinar el torso durante el movimiento",
-                "No mantener un ritmo constante"
-              ]
-            }
-          },
-          {
-            "id": "columna-rotaciones",
-            "title": "Rotaciones de Tronco",
-            "exerciseTypes": {
-              "countType": {
-                "value": "repetitions",
-                "count": 10
-              },
-              "bodyType": {
-                "value": "unilateral"
-              },
-              "movementType": {
-                "value": "simple"
-              }
-            },
-            "expectedTime": 30,
-            "detailedInstructions": {
-              "purpose": "Aumentar la flexibilidad de la columna y preparar el torso para el movimiento.",
-              "technique": [
-                "Mantén los brazos abiertos",
-                "Gira suavemente el torso a cada lado",
-                "Mantén las caderas estables"
-              ],
-              "benefits": [
-                "Mejora la movilidad de la columna",
-                "Reduce la rigidez muscular",
-                "Activa los músculos del core"
-              ],
-              "commonMistakes": [
-                "Girar con demasiada rapidez",
-                "Mover las caderas durante la rotación",
-                "No mantener una postura erguida"
-              ]
-            }
-          },
-          {
-            "id": "columna-inclinaciones",
-            "title": "Inclinaciones Laterales",
-            "exerciseTypes": {
-              "countType": {
-                "value": "repetitions",
-                "count": 5
-              },
-              "bodyType": {
-                "value": "unilateral"
-              },
-              "movementType": {
-                "value": "simple"
-              }
-            },
-            "expectedTime": 30,
-            "detailedInstructions": {
-              "purpose": "Estirar y movilizar los músculos laterales del torso.",
-              "technique": [
-                "Mantén una postura erguida",
-                "Inclínate suavemente a cada lado",
-                "No uses fuerza, deja que sea un movimiento natural"
-              ],
-              "benefits": [
-                "Mejora la flexibilidad lateral",
-                "Estira los músculos del costado",
-                "Aumenta la movilidad de la columna"
-              ],
-              "commonMistakes": [
-                "Inclinar demasiado",
-                "Mover las caderas",
-                "No mantener la espalda recta"
-              ]
-            }
-          },
-          {
-            "id": "columna-cat-cow",
-            "title": "Cat-Cow",
-            "exerciseTypes": {
-              "countType": {
-                "value": "repetitions",
-                "count": 10
-              },
-              "bodyType": {
-                "value": "unilateral"
-              },
-              "movementType": {
-                "value": "simple"
-              }
-            },
-            "expectedTime": 30,
-            "detailedInstructions": {
-              "purpose": "Movilizar la columna, mejorando su flexibilidad y liberando tensión.",
-              "technique": [
-                "Alterna entre arquear y redondear la espalda",
-                "Sincroniza el movimiento con la respiración",
-                "Realiza el movimiento de manera suave y controlada"
-              ],
-              "benefits": [
-                "Mejora la flexibilidad de la columna",
-                "Alivia la tensión muscular",
-                "Mejora la postura"
-              ],
-              "commonMistakes": [
-                "Movimientos bruscos",
-                "No sincronizar con la respiración",
-                "No mantener un ritmo constante"
-              ]
-            }
-          },
-          {
-            "id": "hombros-circulos",
-            "title": "Círculos de Hombros",
-            "exerciseTypes": {
-              "countType": {
-                "value": "repetitions",
-                "count": 20
-              },
-              "bodyType": {
-                "value": "unilateral"
-              },
-              "movementType": {
-                "value": "compound"
-              }
-            },
-            "expectedTime": 30,
-            "detailedInstructions": {
-              "purpose": "Preparar los hombros para el movimiento, mejorando su movilidad.",
-              "technique": [
-                "Realiza 10 círculos hacia adelante",
-                "Luego realiza 10 círculos hacia atrás",
-                "Mantén los movimientos suaves y controlados"
-              ],
-              "benefits": [
-                "Mejora la movilidad de los hombros",
-                "Reduce la rigidez muscular",
-                "Previene lesiones"
-              ],
-              "commonMistakes": [
-                "Realizar círculos muy pequeños",
-                "Movimientos bruscos",
-                "No mantener una postura estable"
-              ]
-            }
-          },
-          {
-            "id": "hombros-brazos-cruzados",
-            "title": "Brazos Cruzados y Abiertos",
-            "exerciseTypes": {
-              "countType": {
-                "value": "repetitions",
-                "count": 10
-              },
-              "bodyType": {
-                "value": "unilateral"
-              },
-              "movementType": {
-                "value": "simple"
-              }
-            },
-            "expectedTime": 30,
-            "detailedInstructions": {
-              "purpose": "Movilizar los hombros y los músculos de la parte superior del cuerpo.",
-              "technique": [
-                "Cruza los brazos al frente",
-                "Abre los brazos como un abrazo",
-                "Realiza el movimiento de manera suave"
-              ],
-              "benefits": [
-                "Mejora la flexibilidad de los hombros",
-                "Activa los músculos de la parte superior del cuerpo",
-                "Prepara para movimientos más intensos"
-              ],
-              "commonMistakes": [
-                "Movimientos bruscos",
-                "No mantener los brazos a la misma altura",
-                "Tensionar demasiado los músculos"
-              ]
-            }
-          },
-          {
-            "id": "hombros-elevaciones",
-            "title": "Elevaciones de Hombros",
-            "exerciseTypes": {
-              "countType": {
-                "value": "repetitions",
-                "count": 10
-              },
-              "bodyType": {
-                "value": "unilateral"
-              },
-              "movementType": {
-                "value": "simple"
-              }
-            },
-            "expectedTime": 30,
-            "detailedInstructions": {
-              "purpose": "Liberar tensión en los hombros y cuello.",
-              "technique": [
-                "Eleva los hombros hacia las orejas",
-                "Relaja suavemente",
-                "Mantén un movimiento controlado"
-              ],
-              "benefits": [
-                "Reduce la tensión muscular",
-                "Mejora la movilidad de los hombros",
-                "Alivia la rigidez del cuello"
-              ],
-              "commonMistakes": [
-                "Elevar los hombros con brusquedad",
-                "Mantener los hombros elevados",
-                "No relajar completamente"
-              ]
-            }
-          },
-          {
-            "id": "munecas-circulos",
-            "title": "Círculos de Muñecas",
-            "exerciseTypes": {
-              "countType": {
-                "value": "repetitions",
-                "count": 20
-              },
-              "bodyType": {
-                "value": "bilateral"
-              },
-              "movementType": {
-                "value": "simple"
-              }
-            },
-            "expectedTime": 30,
-            "detailedInstructions": {
-              "purpose": "Preparar las articulaciones de las muñecas para el movimiento, mejorando su flexibilidad.",
-              "technique": [
-                "Realiza círculos completos con cada muñeca",
-                "Mantén los movimientos suaves y controlados",
-                "Alterna direcciones"
-              ],
-              "benefits": [
-                "Mejora la movilidad de las muñecas",
-                "Reduce el riesgo de lesiones",
-                "Activa la circulación en las articulaciones"
-              ],
-              "commonMistakes": [
-                "Realizar movimientos bruscos",
-                "Hacer círculos muy pequeños",
-                "Tensar los músculos del brazo"
-              ]
-            }
-          },
-          {
-            "id": "cuello-rotaciones",
-            "title": "Rotaciones Suaves de Cuello",
-            "exerciseTypes": {
-              "countType": {
-                "value": "repetitions",
-                "count": 5
-              },
-              "bodyType": {
-                "value": "unilateral"
-              },
-              "movementType": {
-                "value": "simple"
-              }
-            },
-            "expectedTime": 30,
-            "detailedInstructions": {
-              "purpose": "Liberar tensión en el cuello y preparar la zona para el movimiento.",
-              "technique": [
-                "Realiza rotaciones suaves",
-                "Evita hacer círculos completos",
-                "Mantén los movimientos lentos y controlados"
-              ],
-              "benefits": [
-                "Reduce la rigidez del cuello",
-                "Mejora la movilidad cervical",
-                "Alivia la tensión muscular"
-              ],
-              "commonMistakes": [
-                "Realizar rotaciones bruscas",
-                "Hacer círculos completos",
-                "Forzar el rango de movimiento"
-              ]
-            }
-          }
-        ]
+"id": "warmup_daily_v2_001",
+  "name": "Calentamiento Dinámico Diario",
+  "description": "Rutina completa para activar articulaciones y músculos. Prepara tu cuerpo para el día o el entrenamiento.",
+  "duration_estimated_minutes": 10,
+  "type": "Calentamiento / Movilidad",
+  "exercises": [
+    {
+      "id": "marcha_sitio_base_01",
+      "name": "Marcha en el Sitio",
+      "description": "Inicio suave para elevar ritmo cardíaco y flujo sanguíneo.",
+      "duration_seconds": 60,
+      "steps": [
+        {"description": "Eleva rodillas alternadamente, braceo natural."}
+      ],
+      "equipment": "Ninguno",
+      "muscle_group": "General"
+    },
+    {
+      "id": "cuello_mov_lateral_01",
+      "name": "Inclinación Lateral de Cuello",
+      "description": "Movilización suave de cervicales laterales.",
+      "duration_seconds": 40,
+      "steps": [
+        {"description": "Inclina cabeza suavemente hacia hombro derecho."},
+        {"description": "Inclina cabeza suavemente hacia hombro izquierdo."}
+      ],
+      "equipment": "Ninguno",
+      "muscle_group": "Cuello"
+    },
+    {
+      "id": "cuello_mov_rotacion_01",
+      "name": "Rotación de Cuello",
+      "description": "Movilización suave en rotación.",
+      "duration_seconds": 40,
+      "steps": [
+        {"description": "Gira cabeza lentamente para mirar sobre hombro derecho."},
+        {"description": "Gira cabeza lentamente para mirar sobre hombro izquierdo."}
+      ],
+      "equipment": "Ninguno",
+      "muscle_group": "Cuello"
+    },
+    {
+      "id": "circulos_hombros_03",
+      "name": "Círculos de Hombros",
+      "description": "Moviliza la articulación del hombro.",
+      "duration_seconds": 60,
+      "steps": [
+        {"description": "Realiza círculos hacia adelante con ambos hombros."},
+        {"description": "Realiza círculos hacia atrás con ambos hombros."}
+      ],
+      "equipment": "Ninguno",
+      "muscle_group": "Hombros"
+    },
+    {
+        "id": "circulos_brazos_completos_01",
+        "name": "Círculos Amplios de Brazos",
+        "description": "Movilidad completa del hombro con brazos extendidos.",
+        "duration_seconds": 60,
+        "steps": [
+          {"description": "Brazos extendidos: círculos amplios hacia adelante."},
+          {"description": "Brazos extendidos: círculos amplios hacia atrás."}
+        ],
+        "equipment": "Ninguno",
+        "muscle_group": "Hombros / Dorsal"
       },
-      {
-        "name": "Activación Neural Progresiva",
-        "exercises": [
-          {
-            "id": "marcha-sitio",
-            "title": "Marcha en el Sitio",
-            "exerciseTypes": {
-              "countType": {
-                "value": "seconds",
-                "count": 60
-              },
-              "bodyType": {
-                "value": "unilateral"
-              },
-              "movementType": {
-                "value": "simple"
-              }
-            },
-            "expectedTime": 60,
-            "detailedInstructions": {
-              "purpose": "Activar el sistema nervioso y preparar el cuerpo para el movimiento, elevando gradualmente la frecuencia cardíaca.",
-              "technique": [
-                "Inicia con movimientos lentos y controlados",
-                "Levanta las rodillas a una altura cómoda",
-                "Coordina el movimiento de brazos y piernas"
-              ],
-              "breathingTips": [
-                "Mantén una respiración constante y profunda",
-                "Sincroniza la respiración con el movimiento"
-              ],
-              "benefits": [
-                "Eleva la frecuencia cardíaca",
-                "Mejora la coordinación",
-                "Prepara el cuerpo para ejercicio más intenso"
-              ],
-              "commonMistakes": [
-                "Comenzar muy rápido",
-                "No mantener una postura erguida",
-                "Movimientos descoordinados"
-              ],
-              "modifications": [
-                "Reduce la velocidad si te sientes cansado",
-                "Disminuye la altura de las rodillas si es necesario"
-              ]
-            }
-          },
-          {
-            "id": "skipping-suave",
-            "title": "Skipping Suave",
-            "exerciseTypes": {
-              "countType": {
-                "value": "seconds",
-                "count": 60
-              },
-              "bodyType": {
-                "value": "unilateral"
-              },
-              "movementType": {
-                "value": "simple"
-              }
-            },
-            "expectedTime": 60,
-            "detailedInstructions": {
-              "purpose": "Mejorar la coordinación y activar los músculos de las piernas con un movimiento de baja intensidad.",
-              "technique": [
-                "Eleva las rodillas alternadamente",
-                "Mantén un ritmo controlado",
-                "Coordina el movimiento de brazos"
-              ],
-              "breathingTips": [
-                "Mantén una respiración rítmica",
-                "Exhala en cada elevación de rodilla"
-              ],
-              "benefits": [
-                "Mejora la coordinación neuromuscular",
-                "Activa los músculos de las piernas",
-                "Prepara el sistema cardiovascular"
-              ],
-              "commonMistakes": [
-                "Realizar movimientos muy rápidos",
-                "No coordinar brazos y piernas",
-                "Perder el equilibrio"
-              ],
-              "modifications": [
-                "Reduce la altura de las rodillas si es necesario",
-                "Disminuye la velocidad si te sientes cansado"
-              ]
-            }
-          },
-          {
-            "id": "jumping-jacks-suaves",
-            "title": "Jumping Jacks Suaves",
-            "exerciseTypes": {
-              "countType": {
-                "value": "seconds",
-                "count": 60
-              },
-              "bodyType": {
-                "value": "unilateral"
-              },
-              "movementType": {
-                "value": "simple"
-              }
-            },
-            "expectedTime": 60,
-            "detailedInstructions": {
-              "purpose": "Aumentar la frecuencia cardíaca y mejorar la coordinación general del cuerpo.",
-              "technique": [
-                "Comienza con movimientos pequeños",
-                "Aumenta gradualmente la amplitud",
-                "Mantén una respiración fluida"
-              ],
-              "breathingTips": [
-                "Respira de manera constante",
-                "Sincroniza la respiración con los movimientos"
-              ],
-              "benefits": [
-                "Mejora la coordinación",
-                "Aumenta la frecuencia cardíaca",
-                "Activa múltiples grupos musculares"
-              ],
-              "commonMistakes": [
-                "Comenzar con movimientos muy amplios",
-                "Perder el ritmo de respiración",
-                "No mantener el equilibrio"
-              ],
-              "modifications": [
-                "Reduce la amplitud de los movimientos",
-                "Disminuye la velocidad si te sientes cansado"
-              ]
-            }
-          },
-          {
-            "id": "rotaciones-coordinadas",
-            "title": "Rotaciones Coordinadas",
-            "exerciseTypes": {
-              "countType": {
-                "value": "seconds",
-                "count": 60
-              },
-              "bodyType": {
-                "value": "unilateral"
-              },
-              "movementType": {
-                "value": "simple"
-              }
-            },
-            "expectedTime": 60,
-            "detailedInstructions": {
-              "purpose": "Mejorar la coordinación y la sincronización del movimiento.",
-              "technique": [
-                "Mantén los brazos extendidos",
-                "Realiza rotaciones de tronco suaves",
-                "Sincroniza la respiración con el movimiento"
-              ],
-              "breathingTips": [
-                "Exhala en cada rotación",
-                "Mantén una respiración controlada"
-              ],
-              "benefits": [
-                "Mejora la coordinación",
-                "Activa los músculos del core",
-                "Aumenta la flexibilidad del tronco"
-              ],
-              "commonMistakes": [
-                "Realizar rotaciones bruscas",
-                "No sincronizar la respiración",
-                "Perder el equilibrio"
-              ],
-              "modifications": [
-                "Reduce la amplitud de las rotaciones",
-                "Apóyate si necesitas mantener el equilibrio"
-              ]
-            }
-          }
-        ]
-      }
-    ]
-  }
-  
+    {
+      "id": "rotacion_tronco_controlada_01",
+      "name": "Rotación de Tronco",
+      "description": "Moviliza columna dorsal, activa oblicuos.",
+      "duration_seconds": 60,
+      "steps": [
+        {"description": "Gira torso controlado de lado a lado, cadera estable."}
+      ],
+      "equipment": "Ninguno",
+      "muscle_group": "Core / Espalda"
+    },
+    {
+      "id": "circulos_cadera_amplios_01",
+      "name": "Círculos de Cadera",
+      "description": "Moviliza la articulación coxo-femoral.",
+      "duration_seconds": 60,
+      "steps": [
+        {"description": "Círculos amplios de cadera hacia la derecha."},
+        {"description": "Círculos amplios de cadera hacia la izquierda."}
+      ],
+      "equipment": "Ninguno",
+      "muscle_group": "Cadera / Core"
+    },
+    {
+      "id": "balanceo_pierna_frontal_dyn_01",
+      "name": "Balanceo Pierna Frontal",
+      "description": "Estiramiento dinámico isquios y flexores cadera.",
+      "duration_seconds": 60,
+      "steps": [
+        {"description": "Balancea pierna derecha adelante y atrás (controlado)."},
+        {"description": "Balancea pierna izquierda adelante y atrás (controlado)."}
+      ],
+      "equipment": "Pared o apoyo (opcional)",
+      "muscle_group": "Isquiotibiales / Cadera"
+    },
+     {
+      "id": "balanceo_pierna_lateral_dyn_01",
+      "name": "Balanceo Pierna Lateral",
+      "description": "Estiramiento dinámico aductores/abductores.",
+      "duration_seconds": 60,
+      "steps": [
+        {"description": "Balancea pierna derecha lateralmente (cruzando)."},
+        {"description": "Balancea pierna izquierda lateralmente (cruzando)."}
+      ],
+      "equipment": "Pared o apoyo (opcional)",
+      "muscle_group": "Aductores / Abductores / Cadera"
+    },
+    {
+      "id": "sentadilla_parcial_01",
+      "name": "Sentadilla Parcial (Activación)",
+      "description": "Activa piernas y glúteos, prepara rodillas.",
+      "duration_seconds": 60,
+      "steps": [
+        {"description": "Baja cadera (media sentadilla), espalda recta, sube."}
+      ],
+      "equipment": "Ninguno",
+      "muscle_group": "Piernas / Glúteos"
+    },
+    {
+      "id": "rotacion_rodilla_01",
+      "name": "Círculos de Rodillas",
+      "description": "Movilidad suave de rodillas (juntas).",
+      "duration_seconds": 60,
+      "steps": [
+        {"description": "Rodillas juntas: círculos hacia la derecha."},
+        {"description": "Rodillas juntas: círculos hacia la izquierda."}
+      ],
+      "equipment": "Ninguno",
+      "muscle_group": "Rodillas (Movilidad)"
+    },
+    {
+      "id": "circulos_tobillo_multi_01",
+      "name": "Círculos de Tobillo",
+      "description": "Moviliza ambos tobillos en todas direcciones.",
+      "duration_seconds": 120,
+      "steps": [
+        {"description": "Pie derecho: círculos hacia afuera."},
+        {"description": "Pie derecho: círculos hacia adentro."},
+        {"description": "Pie izquierdo: círculos hacia afuera."},
+        {"description": "Pie izquierdo: círculos hacia adentro."}
+      ],
+      "equipment": "Ninguno",
+      "muscle_group": "Tobillos"
+    },
+    {
+      "id": "elevacion_talones_base_01",
+      "name": "Elevación de Talones",
+      "description": "Activa gemelos y fortalece tobillos.",
+      "duration_seconds": 40,
+      "steps": [
+        {"description": "Ponte de puntillas y baja controlado."}
+      ],
+      "equipment": "Ninguno",
+      "muscle_group": "Gemelos / Tobillos"
+    }
+  ]
+}
