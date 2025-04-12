@@ -25,14 +25,26 @@
               {
                 "count": 10,
                 "side": "derecho",
-                "direction": "ambos",
-                "description": "Tobillo derecho"
+                "direction": "reloj",
+                "description": "10 giros hacia afuera del tobillo derecho"
               },
               {
                 "count": 10,
                 "side": "izquierdo",
-                "direction": "ambos",
-                "description": "Tobillo izquierdo"
+                "direction": "reloj",
+                "description": "10 giros hacia afuera del tobillo izquierdo"
+              },
+              {
+                "count": 10,
+                "side": "derecho",
+                "direction": "contrareloj",
+                "description": "10 giros hacia adentro del tobillo derecho"
+              },
+              {
+                "count": 10,
+                "side": "izquierdo",
+                "direction": "contrareloj",
+                "description": "10 giros hacia adentro del tobillo izquierdo"
               }
             ],
             "detailedInstructions": {
